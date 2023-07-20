@@ -1,9 +1,5 @@
 # manim files
-/media/images/
-/media/videos/sine3d/480p15/
-/media/videos/sine3d/720p30/
-/media/videos/sine3d/1080p60/
-/media/videos/sine3d/2160p60/partial_movie_files/
+/media/
 
 # Python
 
