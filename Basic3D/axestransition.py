@@ -10,11 +10,18 @@ class AxesTransition(ThreeDScene):
             x_length=8,
             y_length=8,
             z_length=8,
+            x_axis_config= {
+                "color": RED,
+            },
+            y_axis_config= {
+                "color": GREEN,
+            },
+            z_axis_config= {
+                "color": BLUE,
+            },
         )
         self.add(axes)
-        self.set_camera_orientation(phi=75 * DEGREES, theta= 15 * DEGREES, run_time=5)
-        axes2 = axes.copy().shift(DOWN * 4)
-        self.play(Transform(axes, axes2), run_time=1)
+        self.play(
+            axes.animate.set_color(BLACK),
+        )
         self.wait()
-        #axes.move_to(DOWN * 10)
-        #self.remove(axes)
